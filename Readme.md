@@ -22,4 +22,4 @@ Um jogo de cozinhar no browser!
 
 ## Feito em VSCode!
 
-[O meu perfil de github!](https://github.com/stxnezz)
+[Vem ver o meu perfil de github!](https://github.com/stxnezz)
