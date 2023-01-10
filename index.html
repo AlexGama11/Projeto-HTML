@@ -32,6 +32,9 @@
 
     <title>Main Page</title>
 
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
@@ -41,23 +44,16 @@
   <body>
     <!-- this is the start of content -->
     
-    <h1 id="header" style="text-align: justified">Welcome to Cookin!</h1>
-
-    <div id="sidemenu" class="sidemenu">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookies</a>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Página Inicial!</a>
+      <a href="#news">Notícias!</a>
+      <a href="#contact">Opções!</a>
+      <a href="#about">Perfil!</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <p>‎</p>
 
-    <p id="paragraph" style="text-align: center">
-      <span onclick="openNav()" style="font-size: 25px; cursor: pointer"
-        >☰Website Menu</span
-      >
-    </p>
-
-    <p>‎</p>
 
   </body>
 </html>
