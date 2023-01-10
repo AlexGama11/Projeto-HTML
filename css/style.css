@@ -1,27 +1,5 @@
 /* a minimalist set of CSS resets */
 
-/* default to border-box */
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/* images and videos max out at full width */
-img,
-video {
-  height: auto;
-  max-width: 100%;
-}
-
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: black;
