@@ -1,5 +1,5 @@
-const loginData = require('./config.json');
-const loginDetails = JSON.parse(loginData);
+import jsonData from "./loginDetails.json" assert { type: "json" };
+console.log(jsonData);
 
 var unameInput = document.getElementById("uname");
 var pwordInput = document.getElementById("pword");
