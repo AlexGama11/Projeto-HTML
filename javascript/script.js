@@ -20,6 +20,7 @@ var pwordInput = document.getElementById("pword");
 
 function validateForm() {
   //ver php para submeter o form!!!
+  event.preventDefault();
   let x = document.forms["loginForm"]["uname"].value;
   let y = document.forms["loginForm"]["pword"].value;
 
