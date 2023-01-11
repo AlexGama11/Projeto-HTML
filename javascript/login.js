@@ -11,15 +11,15 @@ function validateForm() {
 
   if (x != loginDetails.username || y != loginDetails.password) {
     alert("O campo está vazio, ou a informção está errada!");
+    delete window.alert;
     return false;
   }
 
   else
   {
-    window.location.replace("https://www.alexmango.tk");
+    //window.location.replace("https://www.alexmango.tk");
+    alert(`Username:${loginDetails.username}; \nPassword: ${loginDetails.password}; \nNome do Restaurante: ${loginDetails.nomeRestaurante}; \nNível: ${loginDetails.nível}.`);
+    delete window.alert;
     return true;
   }
-
-  alert(`Username:${x},\nPassword::${y}.`);
-  console.log(`Username:${x},\nPassword::${y}.`);
 }
