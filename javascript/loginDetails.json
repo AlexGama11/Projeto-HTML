@@ -1,0 +1,5 @@
+{ "loginDetails" : [
+    {"username": "admin", "password": "password", "nomeRestaurante": "McDonald's", "nível": "20"},
+    {"username": "user", "password": "burguer", "nomeRestaurante": "Pizzahut", "nível": "5"}
+]
+}

@@ -1,4 +1,9 @@
-const loginDetails = {username: "admin", password: "password", nomeRestaurante: "McDonald's", nível: "20"};
+const loginData = require('./config.json');
+const loginDetails = JSON.parse(loginData);
+
+loginDetails.forEach(function(object){
+    console.log(object.username); 
+});
 
 var unameInput = document.getElementById("uname");
 var pwordInput = document.getElementById("pword");
@@ -9,17 +14,17 @@ function validateForm() {
   let x = document.forms["loginForm"]["uname"].value;
   let y = document.forms["loginForm"]["pword"].value;
 
-  if (x != loginDetails.username || y != loginDetails.password) {
+  /*if (x != loginDetails.username || y != loginDetails.password) {
     alert("O campo está vazio, ou a informção está errada!");
     delete window.alert;
     return false;
-  }
+  }*/
 
-  else
+ /* else
   {
     //window.location.replace("https://www.alexmango.tk");
-    alert(`Username:${loginDetails.username}; \nPassword: ${loginDetails.password}; \nNome do Restaurante: ${loginDetails.nomeRestaurante}; \nNível: ${loginDetails.nível}.`);
+   // alert(`Username:${loginDetails.username}; \nPassword: ${loginDetails.password}; \nNome do Restaurante: ${loginDetails.nomeRestaurante}; \nNível: ${loginDetails.nível}.`);
     delete window.alert;
     return true;
-  }
+  }*/
 }
