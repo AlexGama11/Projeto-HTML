@@ -18,7 +18,7 @@ const loginDetails = {username: "admin", password: "password", nomeRestaurante: 
 var unameInput = document.getElementById("uname");
 var pwordInput = document.getElementById("pword");
 
-function validateForm(event) {
+function validateForm() {
   //ver php para submeter o form!!!
   //event.preventDefault();
   let x = document.forms["loginForm"]["uname"].value;
@@ -35,5 +35,6 @@ function validateForm(event) {
     return true;
   }
 
-  alert(`Username:${x},\nPassword::${y}.`)
+  alert(`Username:${x},\nPassword::${y}.`);
+  console.log(`Username:${x},\nPassword::${y}.`);
 }
