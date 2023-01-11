@@ -18,7 +18,7 @@ const loginDetails = {username: "admin", password: "password", nomeRestaurante: 
 var unameInput = document.getElementById("uname");
 var pwordInput = document.getElementById("pword");
 
-function validateForm() {
+function validateForm(event) {
   //ver php para submeter o form!!!
   event.preventDefault();
   let x = document.forms["loginForm"]["uname"].value;
