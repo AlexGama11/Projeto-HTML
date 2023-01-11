@@ -1,5 +1,5 @@
-import jsonData from "./loginDetails.json" assert { type: "json" };
-console.log(jsonData);
+fetch("loginDetails.json")
+  .then(json => console.log(json));
 
 var unameInput = document.getElementById("uname");
 var pwordInput = document.getElementById("pword");
