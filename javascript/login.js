@@ -1,4 +1,4 @@
-fetch("loginDetails.json")
+fetch("./loginDetails.json")
   .then(json => console.log(json));
 
 var unameInput = document.getElementById("uname");
