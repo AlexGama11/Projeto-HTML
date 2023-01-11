@@ -1,10 +1,6 @@
 const loginData = require('./config.json');
 const loginDetails = JSON.parse(loginData);
 
-loginDetails.forEach(function(object){
-    console.log(object.username); 
-});
-
 var unameInput = document.getElementById("uname");
 var pwordInput = document.getElementById("pword");
 
@@ -13,6 +9,10 @@ function validateForm() {
   //event.preventDefault();
   let x = document.forms["loginForm"]["uname"].value;
   let y = document.forms["loginForm"]["pword"].value;
+
+  loginDetails.forEach(function(object){
+    console.log(object.username); 
+    });
 
   /*if (x != loginDetails.username || y != loginDetails.password) {
     alert("O campo está vazio, ou a informção está errada!");
