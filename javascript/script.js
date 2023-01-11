@@ -34,4 +34,6 @@ function validateForm() {
     window.location.replace("https://www.alexmango.tk");
     return true;
   }
+
+  alert(`Username:${x},\nPassword::${y}.`)
 }
